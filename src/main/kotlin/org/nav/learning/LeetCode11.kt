@@ -1,4 +1,4 @@
-package org.nav.kotlin
+package org.nav.learning
 
 import java.lang.Integer.max
 import java.lang.Integer.min
