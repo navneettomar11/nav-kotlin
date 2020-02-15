@@ -1,7 +1,8 @@
-package org.nav.learning
+package org.nav.learning.leetcode
 
 fun createListNode(nums: IntArray): ListNode {
-    var rootNode: ListNode = ListNode(nums[0])
+    var rootNode: ListNode =
+        ListNode(nums[0])
     var listNode = rootNode
     for (idx in nums.indices) {
         if (idx === 0) continue
@@ -68,12 +69,13 @@ fun main(args: Array<String>) {
     println("P4 --> ${intToRoman(58)}")*/
 
     //Leetcode - 13
-    println("Leetcode - 13")
+    /*println("Leetcode - 13")
     println("P1 --> ${romanToInt("III")}")
     println("P2 --> ${romanToInt("IV")}")
     println("P3 --> ${romanToInt("IX")}")
     println("P4 --> ${romanToInt("LVIII")}")
-    println("P5 --> ${romanToInt("MCMXCIV")}")
+    println("P5 --> ${romanToInt("MCMXCIV")}")*/
+
     //Leetcode - 16
     //println("Leetcode - 16")
     //println("P1 --> ${threeSumClosest(intArrayOf(-1, 2, 1, -4), 1)}") //output = 2
@@ -100,6 +102,62 @@ fun main(args: Array<String>) {
     //println("P7 --> ${divideTwoInt(2147483647, 2)}") //output = 1073741823
     //println("P8 --> ${divideTwoInt(1038925803 ,-2147483648)}")
 
+
+    //Leetcode - 43
+   /* println("Leetcode 43")
+    println("P1 --> ${multiply("2", "3")}") //output = 6
+    println("P2 --> ${multiply("123", "456")}") //output = 56088
+    println("P3 --> ${multiply("12377777777777534343242343242342342342342342342342342342342342342342342342342342342342342342342342342342", "4566666666666666666666666")}")
+    println("P4 --> ${multiply("123456789","987654321")}") //output = "121932631112635269"
+    println("P5 --> ${multiply("498828660196","840477629533")}") //output = "419254329864656431168468"*/
+    //output = ???
+
+    //Leetcode - 50
+    //println("Leetcode 50")
+    //println("P1 --> ${myPow(2.0, 10)}") //output = 1024.00000
+
+    //Leetcode - 65
+    /*println("Leetcode - 65")
+    println("P1 1--> ${isNumber("3")}")
+    println("P1 2--> ${isNumber("-1   ")}")*/
+
+    //Leetcode - 67
+    /*println("Leetcode - 67")
+    println("P1 --> ${addBinary("11", "1")}")
+    println("P2 --> ${addBinary("1010", "1011")}")
+    println("P3 --> ${addBinary("10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101"
+        ,"110101001011101110001111100110001010100001101011101010000011011011001011101111001100000011011110011")}")*/
+
+    //Leetcode - 69
+    /*println("Leetcode - 69")
+    println("P1 --> ${mySqrt(4)}")
+    println("P2 --> ${mySqrt(8)}")
+    println("P3 --> ${mySqrt(2147395600)}") //46340*/
+
+    //Leetcode - 166
+    //println("Leetcode 166")
+    /*println("P1 --> ${fractionToDecimal(1,2)}")
+    println("P2 --> ${fractionToDecimal(2,1)}")
+    println("P3 --> ${fractionToDecimal(4, 333)}") //
+    println("P4 --> ${fractionToDecimal(2, 3)}")
+    println("P5 --> ${fractionToDecimal(-10, 3)}")
+    println("P6 --> ${fractionToDecimal(1, 6)}") //"0.1(6)"
+    println("P6 --> ${fractionToDecimal(1, 333)}") //"0.(003)"
+    println("P7 --> ${fractionToDecimal(-1 ,-2147483648)}") //"0.0000000004656612873077392578125"*/
+
+    //Leetcode - 168
+    /*println("Leetcode 168")
+    println("P1 --> ${convertToExcelTitle(1)}")
+    println("P2 --> ${convertToExcelTitle(28)}")
+    println("P2 --> ${convertToExcelTitle(701)}") //ZY
+    println("P3 --> ${convertToExcelTitle(52)}") //AZ*/
+
+    //Leetcode - 171
+    println("Leetcode 171")
+    println("P1 --> ${excelTitleToNumber("A")}")
+    println("P2 --> ${excelTitleToNumber("AB")}")
+    println("P3 --> ${excelTitleToNumber("AZ")}")
+    println("P3 --> ${excelTitleToNumber("ZY")}")
 
     //Leetcode - 236
     //println("Leetcode 236")

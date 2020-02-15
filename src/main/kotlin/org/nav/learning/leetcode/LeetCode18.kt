@@ -1,4 +1,4 @@
-package org.nav.learning
+package org.nav.learning.leetcode
 
 /**
  * 4Sum
@@ -22,7 +22,8 @@ fun kSums(nums: IntArray, target: Int, startIdx: Int, kSize: Int): List<List<Int
     var elementList = mutableMapOf<String, List<Int>>()
     for(idx in startIdx..nums.size-1) {
         //println("More than 2 size ::  idx : $idx , nums: ${nums[idx]} target: ${target - nums[idx]} , kSize: ${kSize} ")
-        var tempList = kSums(nums, (target - nums[idx]), idx +1 , kSize -1)
+        var tempList =
+            kSums(nums, (target - nums[idx]), idx + 1, kSize - 1)
         //println(" Temp list ${tempList}")
         if(!tempList.isEmpty()) {
             for(list in tempList) {

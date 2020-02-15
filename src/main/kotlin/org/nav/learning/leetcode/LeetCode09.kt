@@ -1,4 +1,4 @@
-package org.nav.learning
+package org.nav.learning.leetcode
 
 /**
  * <h2>Palindrome Number</h2>

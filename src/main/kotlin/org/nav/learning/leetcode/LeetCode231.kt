@@ -1,4 +1,4 @@
-package org.nav.learning
+package org.nav.learning.leetcode
 
 /**
  *  Zero and negative numbers are not considered powers of two.

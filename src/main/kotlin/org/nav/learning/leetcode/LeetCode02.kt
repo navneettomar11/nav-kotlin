@@ -1,6 +1,5 @@
-package org.nav.learning
+package org.nav.learning.leetcode
 
-import java.lang.Math.pow
 import java.math.BigInteger
 
 class ListNode(var `val`: Int) {
@@ -14,7 +13,7 @@ class ListNode(var `val`: Int) {
 fun convertListNodeToNumber(listNode: ListNode?): BigInteger {
     var num: BigInteger = BigInteger.ZERO
     var dec = BigInteger.ONE;
-    var tempListNode:ListNode? = listNode;
+    var tempListNode: ListNode? = listNode;
     while(tempListNode !== null) {
         var bigNum = tempListNode.let { it.`val`.toBigInteger() }
         num = num.add(dec.multiply(bigNum))

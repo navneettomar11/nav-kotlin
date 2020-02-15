@@ -1,4 +1,4 @@
-package org.nav.learning
+package org.nav.learning.leetcode
 
 import java.lang.Math.abs
 import java.lang.Math.pow

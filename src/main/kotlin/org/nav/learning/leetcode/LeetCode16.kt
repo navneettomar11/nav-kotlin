@@ -1,6 +1,5 @@
-package org.nav.learning
+package org.nav.learning.leetcode
 
-import java.lang.Integer.min
 import kotlin.math.abs
 
 /**

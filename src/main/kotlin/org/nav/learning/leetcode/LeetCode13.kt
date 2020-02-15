@@ -1,4 +1,4 @@
-package org.nav.learning
+package org.nav.learning.leetcode
 
 fun romanToInt(s: String): Int {
     var numbers = IntArray(s.length)
