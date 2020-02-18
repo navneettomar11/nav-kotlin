@@ -103,6 +103,25 @@ fun main(args: Array<String>) {
     //println("P8 --> ${divideTwoInt(1038925803 ,-2147483648)}")
 
 
+    //Leetcode - 33
+    /*println("Leetcode 33")
+    println("P1 --> ${searchInRotatedArray(intArrayOf(4,5,6,7,0,1,2), 0)}") //output = 4
+    println("P2 --> ${searchInRotatedArray(intArrayOf(4,5,6,7,0,1,2), 3)}") //output = -1
+    println("P3 --> ${searchInRotatedArray(intArrayOf(4,5,6,7,0,1,2), 6)}") //output = 2
+*/
+    //Leetcode - 35
+/*    println("Leetcode 35")
+    println("P1 --> ${searchInsert(intArrayOf(1,3,5,6), 5)}") //output = 2
+    println("P2 --> ${searchInsert(intArrayOf(1,3,5,6), 2)}") //output = 1
+    println("P3 --> ${searchInsert(intArrayOf(1,3,5,6), 7 )}") //output = 4
+    println("P4 --> ${searchInsert(intArrayOf(1,3,5,6), 0 )}") //output = 0
+    println("P5 --> ${searchInsert(intArrayOf(1,3,5,6, 9, 11, 15), 10 )}") //output = 4
+    println("P6 --> ${searchInsert(intArrayOf(1,3,5,6, 9, 11, 15), -2 )}") //output = 0
+    println("P6 --> ${searchInsert(intArrayOf(1,3,5,6, 9, 11, 15), 11 )}") //output = 5
+    println("P7 --> ${searchInsert(intArrayOf(1), 0 )}") //output = 0
+    println("P8 --> ${searchInsert(intArrayOf(1), 2 )}") //output = 1*/
+
+
     //Leetcode - 43
    /* println("Leetcode 43")
     println("P1 --> ${multiply("2", "3")}") //output = 6
@@ -134,6 +153,10 @@ fun main(args: Array<String>) {
     println("P2 --> ${mySqrt(8)}")
     println("P3 --> ${mySqrt(2147395600)}") //46340*/
 
+    //Leetcode - 88
+    //println("Leetcode - 88")
+    //mergeSortedArray(intArrayOf(1,2,3,0,0,0), 3, intArrayOf(2,5,6), 3) //[1,2,2,3,5,6]
+
     //Leetcode - 166
     //println("Leetcode 166")
     /*println("P1 --> ${fractionToDecimal(1,2)}")
@@ -153,11 +176,11 @@ fun main(args: Array<String>) {
     println("P3 --> ${convertToExcelTitle(52)}") //AZ*/
 
     //Leetcode - 171
-    println("Leetcode 171")
+   /* println("Leetcode 171")
     println("P1 --> ${excelTitleToNumber("A")}")
     println("P2 --> ${excelTitleToNumber("AB")}")
     println("P3 --> ${excelTitleToNumber("AZ")}")
-    println("P3 --> ${excelTitleToNumber("ZY")}")
+    println("P3 --> ${excelTitleToNumber("ZY")}")*/
 
     //Leetcode - 236
     //println("Leetcode 236")
@@ -167,5 +190,9 @@ fun main(args: Array<String>) {
     //println("P4 ---> ${isPowerOfTwo(-2147483648)}") //output = false
     //println("P5 ---> ${isPowerOfTwo(0)}") //output = false
     //println("P6 ---> ${isPowerOfTwo(-9)}") //output = false
+
+    //Leetcode - 912
+    //println("Leetcode 912")
+    //println("P1 --> ${sortArray(intArrayOf(5,1,1,2,0,0))}")
 }
 
