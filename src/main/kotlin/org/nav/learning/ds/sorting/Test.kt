@@ -26,8 +26,23 @@ fun main(args: Array<String>) {
     quickSort.sort(arr)
     println("Quick Sort : ${arr.toList()}")*/
 
-    arr = intArrayOf(121, 10, 130, 57, 36, 17)
+  /*  arr = intArrayOf(121, 10, 130, 57, 36, 17)
     var heapSort = HeapSort()
     heapSort.sort(arr)
-    println("Heap Sort : ${arr.toList()}")
+    println("Heap Sort : ${arr.toList()}")*/
+
+    /*arr = intArrayOf(5,4,3,2,1)
+    var countingSort = CountingSort()
+    countingSort.sort(arr);
+    println("Counting Sort : ${arr.toList()}")*/
+
+   /* arr = intArrayOf(10,21,17,34,44,11,654,123)
+    var radixSort = RadixSort()
+    radixSort.sort(arr)
+    println("Radix Sort : ${arr.toList()}")*/
+
+    var floatArr = floatArrayOf(0.897f, 0.565f, 0.656f, 0.1234f, 0.665f, 0.3434f)
+    var bucketSort = BucketSort()
+    bucketSort.sort(floatArr);
+    println("Bucket Sort: ${floatArr.toList()}")
 }

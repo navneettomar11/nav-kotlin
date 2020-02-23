@@ -157,6 +157,19 @@ fun main(args: Array<String>) {
     //println("Leetcode - 88")
     //mergeSortedArray(intArrayOf(1,2,3,0,0,0), 3, intArrayOf(2,5,6), 3) //[1,2,2,3,5,6]
 
+    //Leetcode - 155
+    /*println("Leetcode - 155")
+    var leetCode155 = LeetCode155()
+    leetCode155.push(-2)
+    leetCode155.push(0)
+    leetCode155.push(-3)
+    println("minstack getMin : ${leetCode155.getMin()}")
+    leetCode155.pop()
+    println("Top ${leetCode155.top()}")
+    println("minstack getMin : ${leetCode155.getMin()}")*/
+
+
+
     //Leetcode - 166
     //println("Leetcode 166")
     /*println("P1 --> ${fractionToDecimal(1,2)}")
@@ -182,6 +195,13 @@ fun main(args: Array<String>) {
     println("P3 --> ${excelTitleToNumber("AZ")}")
     println("P3 --> ${excelTitleToNumber("ZY")}")*/
 
+    //Leetcode - 172
+    println("Leetcode 172")
+    println("p1 --> ${trailingZeroes(3)}") //output = 0
+    println("p2 --> ${trailingZeroes(5)}") //output = 1
+    println("p3 --> ${trailingZeroes(10)}") //output = 1
+    println("p3 --> ${trailingZeroes(13)}") //output = 2
+
     //Leetcode - 236
     //println("Leetcode 236")
     //println("P1 ---> ${isPowerOfTwo(1)}") //output = true
@@ -194,5 +214,53 @@ fun main(args: Array<String>) {
     //Leetcode - 912
     //println("Leetcode 912")
     //println("P1 --> ${sortArray(intArrayOf(5,1,1,2,0,0))}")
+
+    //Leetcode - 946
+    /*println("Leetcode 946")
+    println(validateStackSequences(intArrayOf(1,2,3,4,5), intArrayOf(4,5,3,2,1))) //output = true
+    println(validateStackSequences(intArrayOf(1,2,3,4,5), intArrayOf(4,5,3,1,2))) //output = false
+    println(validateStackSequences(intArrayOf(4,0,1,2,3), intArrayOf(4,2,3,0,1))) //output = false
+    */
+
+    //Leetcode - 1172
+    /* println("Leetcode 1172")
+   var leetCode1172 = LeetCode1172(2)
+    leetCode1172.push(1)
+    leetCode1172.push(2)
+    leetCode1172.push(3)
+    leetCode1172.push(4)
+    leetCode1172.push(5)
+    println("Pop At : ${leetCode1172.popAtStack(0)}")
+    leetCode1172.push(20)
+    leetCode1172.push(21)
+    println("Pop At : ${leetCode1172.popAtStack(0)}")
+    println("Pop At : ${leetCode1172.popAtStack(2)}")
+    println("Pop element : ${leetCode1172.pop()}") //5
+    println("Pop element : ${leetCode1172.pop()}") //4
+    println("Pop element : ${leetCode1172.pop()}") //3
+    println("Pop element : ${leetCode1172.pop()}") //1
+    println("Pop element : ${leetCode1172.pop()}") //-1
+    var leetCode11721 = LeetCode1172(2)
+    leetCode11721.push(1)
+    leetCode11721.push(2)
+    leetCode11721.push(3)
+    leetCode11721.push(4)
+    leetCode11721.push(5)
+    leetCode11721.push(6)
+    leetCode11721.push(7)
+    println("Pop At : ${leetCode11721.popAtStack(2)}")
+    println("Pop At : ${leetCode11721.popAtStack(2)}")
+    println("Pop At : ${leetCode11721.popAtStack(1)}")
+    println("Pop At : ${leetCode11721.popAtStack(1)}")
+    println("Pop At : ${leetCode11721.popAtStack(0)}")
+    leetCode11721.push(8)
+    leetCode11721.push(9)
+    println("Pop element : ${leetCode11721.pop()}")
+    *println("Pop element : ${leetCode11721.pop()}")
+    println("Pop element : ${leetCode11721.pop()}")
+    println("Pop element : ${leetCode11721.pop()}")
+    println("Pop element : ${leetCode11721.pop()}")*/
+
+
 }
 
