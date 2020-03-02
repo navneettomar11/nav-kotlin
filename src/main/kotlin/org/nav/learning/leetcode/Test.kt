@@ -196,11 +196,19 @@ fun main(args: Array<String>) {
     println("P3 --> ${excelTitleToNumber("ZY")}")*/
 
     //Leetcode - 172
-    println("Leetcode 172")
+    /*println("Leetcode 172")
     println("p1 --> ${trailingZeroes(3)}") //output = 0
     println("p2 --> ${trailingZeroes(5)}") //output = 1
     println("p3 --> ${trailingZeroes(10)}") //output = 1
-    println("p3 --> ${trailingZeroes(13)}") //output = 2
+    println("p3 --> ${trailingZeroes(13)}") //output = 2*/
+
+    //Leetcode - 202
+    //println("LeetCode 202 Testcase 1 --> ${isHappy(19)}") //output true
+    //println("LeetCode 202 Testcase 2 --> ${isHappy(20)}") //output false
+
+    //Leetcode - 204
+    //println("LeetCode 204 Testcase 1 --> ${countPrimes(10)}") //output 4
+    //println("LeetCode 204 Testcase 2 --> ${countPrimes(2)}") //output 0
 
     //Leetcode - 236
     //println("Leetcode 236")
@@ -211,9 +219,28 @@ fun main(args: Array<String>) {
     //println("P5 ---> ${isPowerOfTwo(0)}") //output = false
     //println("P6 ---> ${isPowerOfTwo(-9)}") //output = false
 
+    //Leetcode - 263
+    //println("Leetcode 263 Test 1 --> ${isUgly(6)}") //output true
+    //println("Leetcode 263  Test 2 --> ${isUgly(14)}") //output false
+    //println("Leetcode 263  Test 3 --> ${isUgly(7)}") //output false
+
+    //Leetcode - 264
+    println("Leetcode 264 Test 1 --> ${nthUglyNumber(10)}") //output 12
+    println("Leetcode 264 Test 2 --> ${nthUglyNumber(1352)}") //
+
+    //LeetCode 728
+    //println("LeetCode 728")
+    //println("LeetCode 728 Test 1 ---> ${selfDividingNumbers(1,22)}") //output [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22]
+
+
     //Leetcode - 912
     //println("Leetcode 912")
     //println("P1 --> ${sortArray(intArrayOf(5,1,1,2,0,0))}")
+
+    //Leetcode
+    //println("LeetCode 942 Test 1 ---> ${diStringMatch("IDID").contentToString()}") //output [0, 4, 1, 3]
+    //println("LeetCode 942 Test 2 ---> ${diStringMatch("III").contentToString()}") //output [0,1,2,3]
+    //println("LeetCode 942 Test 3 ---> ${diStringMatch("DDI").contentToString()}") //output [3,2,0,1]
 
     //Leetcode - 946
     /*println("Leetcode 946")
@@ -222,6 +249,11 @@ fun main(args: Array<String>) {
     println(validateStackSequences(intArrayOf(4,0,1,2,3), intArrayOf(4,2,3,0,1))) //output = false
     */
 
+    //Leetcode 1025
+    /*println("LeetCode 1025 Test 1 ---> ${divisorGame(2)}")
+    println("LeetCode 1025 Test 2 ---> ${divisorGame(3)}")
+    println("LeetCode 1025 Test 3 ---> ${divisorGame(4)}")
+    */
     //Leetcode - 1172
     /* println("Leetcode 1172")
    var leetCode1172 = LeetCode1172(2)
@@ -261,6 +293,15 @@ fun main(args: Array<String>) {
     println("Pop element : ${leetCode11721.pop()}")
     println("Pop element : ${leetCode11721.pop()}")*/
 
+    //Leetcode - 1281
+    //println("LeetCode 1281")
+    //println("P1 --> ${subtractProductAndSum(234)}") //output = 15
+    //println("P2 --> ${subtractProductAndSum(4421)}") //output = 21
+
+    //Leetcode - 1323
+    //println("LeetCode 1323")
+    //println("P1 --> ${maximum69Number(9669)}") //output 9969
+    //println("P2 --> ${maximum69Number(9996)}") //output 9969
 
 }
 
