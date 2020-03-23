@@ -153,6 +153,10 @@ fun main(args: Array<String>) {
     println("P2 --> ${mySqrt(8)}")
     println("P3 --> ${mySqrt(2147395600)}") //46340*/
 
+    //leetcode 87
+    //println("LeetCode 87 Test case 1 --> ${isScramble("great", "rgeat")}") //output true
+    //println("LeetCode 87 Test case 2 --> ${isScramble("abcde", "caebd")}") //output false
+
     //Leetcode - 88
     //println("Leetcode - 88")
     //mergeSortedArray(intArrayOf(1,2,3,0,0,0), 3, intArrayOf(2,5,6), 3) //[1,2,2,3,5,6]
@@ -167,7 +171,6 @@ fun main(args: Array<String>) {
     leetCode155.pop()
     println("Top ${leetCode155.top()}")
     println("minstack getMin : ${leetCode155.getMin()}")*/
-
 
 
     //Leetcode - 166
@@ -210,6 +213,17 @@ fun main(args: Array<String>) {
     //println("LeetCode 204 Testcase 1 --> ${countPrimes(10)}") //output 4
     //println("LeetCode 204 Testcase 2 --> ${countPrimes(2)}") //output 0
 
+    //=============================Leetcode - 208====================================//
+    /*var trie = Trie()
+    trie.insert("apple")
+    println("LeetCode 208 Search apple ${trie.search("apple")}")
+    println("LeetCode 208 Search app ${trie.search("app")}")
+    println("LeetCode 208 StartWith app ${trie.startsWith("app")}")
+    println("LeetCode 208 StartWith ppl ${trie.startsWith("ppl")}")
+    trie.insert("app")
+    println("LeetCode 208 Search app ${trie.search("app")}")*/
+    //=============================Leetcode - 208====================================//
+
     //Leetcode - 236
     //println("Leetcode 236")
     //println("P1 ---> ${isPowerOfTwo(1)}") //output = true
@@ -225,13 +239,52 @@ fun main(args: Array<String>) {
     //println("Leetcode 263  Test 3 --> ${isUgly(7)}") //output false
 
     //Leetcode - 264
-    println("Leetcode 264 Test 1 --> ${nthUglyNumber(10)}") //output 12
-    println("Leetcode 264 Test 2 --> ${nthUglyNumber(1352)}") //
+    //println("Leetcode 264 Test 1 --> ${nthUglyNumber(10)}") //output 12
+    //println("Leetcode 264 Test 2 --> ${nthUglyNumber(1352)}") //
 
+    //Leetcode 344
+    /*var charArray = charArrayOf('h','e','l','l','o')
+    reverseString(charArray)
+    println("Leetcode 344 Test case 01: ${charArray.contentToString()}")
+    charArray = charArrayOf('H','a','n','n','a','h')
+    reverseString(charArray)
+    println("Leetcode 344 Test case 02: ${charArray.contentToString()}")*/
+
+    //Leetcode 420
+    /*println("LeetCode 420 TestCase 1 ===> ${strongPasswordChecker("a")}") //output 5
+    println("LeetCode 420 TestCase 2 ===> ${strongPasswordChecker("aaa123")}") //output 1
+    println("LeetCode 420 TestCase 3 ===> ${strongPasswordChecker("aaa111")}") //output 2
+    println("LeetCode 420 TestCase 4 ===> ${strongPasswordChecker("1111111111")}") //output 3
+    println("LeetCode 420 TestCase 5 ===> ${strongPasswordChecker("ABABABABABABABABABAB1")}") //output 2
+    println("LeetCode 420 TestCase 6  ===> ${strongPasswordChecker("aaaaaaaaaaaaaaaaaaaaa")}") //output 7
+    println("LeetCode 420 TestCase 7  ===> ${strongPasswordChecker("hoAISJDBVWD09232UHJEPODKNLADU1")}") //output 10
+    println("LeetCode 420 TestCase 8  ===> ${strongPasswordChecker("aA123")}") //output 1
+    println("LeetCode 420 TestCase 9  ===> ${strongPasswordChecker("1234567890123456Baaaaa")}") //output 3
+    println("LeetCode 420 TestCase 10  ===> ${strongPasswordChecker("1010101010aaaB10101010")}") //output 2
+    println("LeetCode 420 TestCase 11 ===> ${strongPasswordChecker("aaaabbaaabbaaa123456A")}") //output 3
+    println("LeetCode 420 TestCase 12 ===> ${strongPasswordChecker("1Abababcaaaabababababa")}") //output 2
+    println("LeetCode 420 TestCase 13 ===> ${strongPasswordChecker("AAAAAABBBBBB123456789a")}") //output 4
+    println("LeetCode 420 TestCasw 14 ===> ${strongPasswordChecker("aaaaaaaAAAAAA6666bbbbaaaaaaABBC")}") //output 13*/
+
+    //LeetCCode 537
+    //println("LeetCode 537 Test Case 1 ===> ${ComplexNumber.Companion.multiply(ComplexNumber.Companion.parseComplexNumberToObject("1+1i"), ComplexNumber.Companion.parseComplexNumberToObject("1+1i"))}")
+    //println("LeetCode 537 Test Case 2 ===> ${ComplexNumber.Companion.multiply(ComplexNumber.Companion.parseComplexNumberToObject("1+-1i"), ComplexNumber.Companion.parseComplexNumberToObject("1+-1i"))}")
+    //println("LeetCode 537 Test Case 3 ===> ${ComplexNumber.Companion.multiply(ComplexNumber.Companion.parseComplexNumberToObject("78+-76i"), ComplexNumber.Companion.parseComplexNumberToObject("-86+72i"))}")
+
+    //LeetCode 553
+    println("LeetCode 553 Test Case 1 ==> ${optimalDivision(intArrayOf(1000,100,10,2))}")
+    println("LeetCode 553 Test Case 2 ==> ${optimalDivision(intArrayOf(2,3,4))}")
     //LeetCode 728
     //println("LeetCode 728")
     //println("LeetCode 728 Test 1 ---> ${selfDividingNumbers(1,22)}") //output [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22]
 
+    //LeetCode 854
+    /*println("LeetCode 854 Test case 1 ---> ${kSimilarity("ab", "ba")}") //output 1
+    println("LeetCode 854 Test case 2 ---> ${kSimilarity("abc", "bca")}") //output 2
+    println("LeetCode 854 Test case 3 ---> ${kSimilarity("abac", "baca")}") // output 2
+    println("LeetCode 854 Test case 4 ---> ${kSimilarity("aabc", "abca")}") //output 2
+    println("LeetCode 854 Test case 5 ---> ${kSimilarity("bccaba", "abacbc")}") //output 3
+    */
 
     //Leetcode - 912
     //println("Leetcode 912")
@@ -293,6 +346,11 @@ fun main(args: Array<String>) {
     println("Pop element : ${leetCode11721.pop()}")
     println("Pop element : ${leetCode11721.pop()}")*/
 
+    //Leetcode - 1221
+    /*println("Leetcode 1221 Test case 1 = ${balancedStringSplit("RLRRLLRLRL")}") //output 4
+    println("Leetcode 1221 Test case 2 = ${balancedStringSplit("RLLLLRRRLR")}") //output 3
+    println("Leetcode 1221 Test case 3 =  ${balancedStringSplit("RLRRRLLRLL")}") //output 2*/
+
     //Leetcode - 1281
     //println("LeetCode 1281")
     //println("P1 --> ${subtractProductAndSum(234)}") //output = 15
@@ -303,5 +361,10 @@ fun main(args: Array<String>) {
     //println("P1 --> ${maximum69Number(9669)}") //output 9969
     //println("P2 --> ${maximum69Number(9996)}") //output 9969
 
+    //Leetcode 1342
+    /*println("Leetcode 1342 Testcase 1 ${numberOfSteps(14)}") //output 6
+    println("Leetcode 1342 Testcase 2 ${numberOfSteps(8)}") //output 4
+    println("Leetcode 1342 Testcase 3 ${numberOfSteps(123)}") //output 12
+    */
 }
 

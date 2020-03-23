@@ -43,7 +43,7 @@ class MinimumSpanningTree {
             }
         }
         for(i in 0..SIZE-1) {
-            println("Cost ${costMatrix[i].toList()} parent --> ${parent[i]}")
+            //println("Cost ${costMatrix[i].toList()} parent --> ${parent[i]}")
             minCost+=costMatrix[i][parent[i]]
         }
         return minCost
