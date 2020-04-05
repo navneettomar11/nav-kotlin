@@ -10,49 +10,38 @@ fun fourSum(nums: IntArray, target: Int): List<List<Int>> {
         return emptyList()
     }
     nums.sort()
-    return kSums(nums, target, 0, 4)
-}
-
-fun kSums(nums: IntArray, target: Int, startIdx: Int, kSize: Int): List<List<Int>> {
-
-    if(kSize==2) {
-        //println("kSize: 2 target : ${target} startidx : ${startIdx}")
-        return twoSums(nums, target, startIdx);
-    }
-    var elementList = mutableMapOf<String, List<Int>>()
-    for(idx in startIdx..nums.size-1) {
-        //println("More than 2 size ::  idx : $idx , nums: ${nums[idx]} target: ${target - nums[idx]} , kSize: ${kSize} ")
-        var tempList =
-            kSums(nums, (target - nums[idx]), idx + 1, kSize - 1)
-        //println(" Temp list ${tempList}")
-        if(!tempList.isEmpty()) {
-            for(list in tempList) {
-                var newList = mutableListOf<Int>()
-                newList.add(nums[idx])
-                newList.addAll(list)
-                var key = newList.joinToString()
-                //if(!elementList.containsKey(key)) {
-                    elementList.put(key, newList)
-                //}
-
+    val length = nums.size
+    var sumTargetList = mutableMapOf<String, List<Int>>()
+    for(i in 0 until length - 1) {
+        var newTarget = target - nums[i]
+        for(j in 0 until length - 1) {
+            if(i==j) {
+                continue;
+            }
+            var l = j + 1
+            var r = length -1
+            while( l < r && i < r ) {
+                if( l === i ){
+                    l++;
+                    continue;
+                }
+                //println("Idx --> ${j}, ${l}, ${r}  ===j ==l  ${j==l},  l == r ${l == r} j===r ${j==r}")
+                var sum = nums[j] + nums[l] + nums[r]
+                if(sum === newTarget) {
+                    //println("Nums ${nums[i]}, ${nums[j]}, ${nums[l]}, ${nums[r]}")
+                    var list = mutableListOf<Int>(nums[i], nums[j], nums[l], nums[r])
+                    list.sort()
+                    var key = list.joinToString("")
+                    sumTargetList.put(key, list)
+                }
+                if(sum < newTarget) {
+                    l++
+                }else {
+                    r--
+                }
             }
         }
     }
-    return elementList.values.toList()
+    return sumTargetList.values.toMutableList();
 }
 
-fun twoSums(nums: IntArray, target: Int, startIdx: Int): List<List<Int>> {
-    var list = mutableListOf<List<Int>>()
-    var size = nums.size
-    for(idx in startIdx until size) {
-        var jdx = idx + 1
-        while(jdx < size && (nums[idx] + nums[jdx]) !== target) {
-            jdx++
-        }
-        if(jdx !== size) {
-            list.add(mutableListOf(nums[idx], nums[jdx]))
-        }
-    }
-    //println("Target ${target} : list: ${list}")
-    return list
-}

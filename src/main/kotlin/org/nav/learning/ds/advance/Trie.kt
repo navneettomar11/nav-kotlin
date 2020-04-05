@@ -1,41 +1,96 @@
 package org.nav.learning.ds.advance
 
+import java.lang.StringBuilder
+
 
 class Trie {
 
-    var rootTrieNode: TrieNode = TrieNode(false);
+    var root: TrieNode = TrieNode(false);
 
-    private fun buildTrieForStr(s: String, currentNode: TrieNode?, idx: Int) {
-
-        if(idx>= s.length) {
-            return;
+    fun insert(s: String) {
+        var current = root;
+        for(c in s) {
+            if (!current.children.containsKey(c)) {
+               current.children[c]= TrieNode(false)
+            }
+            current = current.children[c]!!;
         }
-        var ch = s[idx]
-        var endWord = idx + 1 == s.length
-        var trieNode: TrieNode? = currentNode
-        println("Ch ${ch} TrieNode ${trieNode}");
-        if(!trieNode!!.chars.containsKey(ch)) {
-            var tempTrieNode = TrieNode(endWord)
-            trieNode!!.chars.put(ch, tempTrieNode)
-            trieNode = tempTrieNode
-        } else {
-            trieNode = trieNode!!.chars.get(ch)
-        }
-        buildTrieForStr(s, trieNode, idx+1)
+        current.endWord = true;
     }
 
-    fun buildTrie(strArr: Array<String>) {
-        for(s in strArr) {
-            buildTrieForStr(s, rootTrieNode, 0)
+    fun search(s: String) : Boolean {
+        var current = root
+        for(c in s) {
+            var node = current.children[c]
+            if(node === null) {
+                return false
+            }
+            current = node
         }
+        return current.endWord
     }
 
-    fun printTrie() {
-        println(rootTrieNode)
+    fun delete(s: String)  {
+        deleteRecursively(root, s, 0)
     }
-    fun check(s: String): Boolean {
 
-        return false;
+    fun startsWith(prefix: String): Boolean {
+        var current = root
+        for(c in prefix) {
+            var node = current.children[c]
+            if(node == null) {
+                return false
+            }
+            current = node
+        }
+        return true
+    }
+
+    private fun deleteRecursively(current: TrieNode, word: String, index: Int): Boolean{
+        if(index == word.length) {
+            if(!current.endWord) {
+                return  false
+            }
+            current.endWord = false
+            return current.children.isEmpty()
+        }
+        var ch = word[index]
+        var node  = current.children[ch]
+        if(node === null) {
+            return false
+        }
+        var shouldDeleteCurretNode = deleteRecursively(node, word, index + 1) && !node.endWord
+        if(shouldDeleteCurretNode) {
+            current.children.remove(ch)
+            return current.children.isEmpty()
+        }
+        return false
+    }
+
+    fun content(): List<String> {
+        var stringList = mutableListOf<String>()
+        if(root.children.isNotEmpty()) {
+            for((k,v) in root.children) {
+                var builder = StringBuilder()
+                builder.append(k)
+                if(v.endWord) {
+                 stringList.add(builder.toString())
+                }
+                recursiveContent(v, builder, stringList)
+            }
+        }
+        return stringList
+    }
+    private fun recursiveContent(node: TrieNode, builder: StringBuilder, stringList: MutableList<String>) {
+        if(node.children.isNotEmpty()) {
+            for((k,v) in node.children) {
+                builder.append(k)
+                if(v.endWord) {
+                    stringList.add(builder.toString())
+                }
+                recursiveContent(v, builder, stringList)
+            }
+        }
     }
 }
 

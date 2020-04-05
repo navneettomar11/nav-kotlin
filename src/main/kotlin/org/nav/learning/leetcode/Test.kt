@@ -86,10 +86,10 @@ fun main(args: Array<String>) {
 
     //Leetcode - 18
     //println("Leetcode - 18")
-    //println("P1 --> ${fourSum(intArrayOf(1, 0, -1, 0, -2, 2), 0)}") //output = [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
-    //println("P2 --> ${fourSum(intArrayOf(0,0,0,0), 1)}") // output = []
-    //println("P3---> ${fourSum(intArrayOf(-3,-1,0,2,4,5), 0)}") //output = [[-3,-1,0,4]]
-    //println("P4 --->${fourSum(intArrayOf(-3,-2,-1,0,1,2,3), 0)}") //output = [[-3,-2,2,3],[-3,-1,1,3],[-3,0,0,3],[-3,0,1,2],[-2,-1,0,3],[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
+    //println("Leetcode 18 Test case 01 --> ${fourSum(intArrayOf(1, 0, -1, 0, -2, 2), 0)}") //output = [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
+    //println("Leetcode 18 Test case 02 --> ${fourSum(intArrayOf(0,0,0,0), 1)}") // output = []
+    //println("Leetcode 18 Test case 03 ---> ${fourSum(intArrayOf(-3,-1,0,2,4,5), 0)}") //output = [[-3,-1,0,4]]
+    //println("Leetcode 18 Test case 04 --->${fourSum(intArrayOf(-3,-2,-1,0,0,1,2,3), 0)}") //output = [[-3,-2,2,3],[-3,-1,1,3],[-3,0,0,3],[-3,0,1,2],[-2,-1,0,3],[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
 
     //Leetcode - 29
     //println("Leetcode 29")
@@ -161,6 +161,15 @@ fun main(args: Array<String>) {
     //println("Leetcode - 88")
     //mergeSortedArray(intArrayOf(1,2,3,0,0,0), 3, intArrayOf(2,5,6), 3) //[1,2,2,3,5,6]
 
+    var leetCode128 = LeetCode128()
+    println("Leetcode 128 Test case 1: ${leetCode128.longestConsecutive(intArrayOf(100, 4, 200, 1, 3, 2))}") //output = 4
+
+   /* println("Leetcode 151 Test Case 1 ===> ##${reverseWords("the sky is blue")}##")
+    println("Leetcode 151 Test Case 2 ===> ##${reverseWords("  hello world!  ")}##")
+    println("Leetcode 151 Test Case 3 ===> ##${reverseWords("a good   example")}##")
+    println("Leetcode 151 Test Case 4 ===> ##${reverseWords("")}##")*/
+
+
     //Leetcode - 155
     /*println("Leetcode - 155")
     var leetCode155 = LeetCode155()
@@ -205,6 +214,11 @@ fun main(args: Array<String>) {
     println("p3 --> ${trailingZeroes(10)}") //output = 1
     println("p3 --> ${trailingZeroes(13)}") //output = 2*/
 
+  /*  val leetCode189 = LeetCode189()
+    println("LeetCode 189 Test case 01 ===> ${leetCode189.rotate(intArrayOf(1,2,3,4,5,6,7), 3)}")
+    println("LeetCode 189 Test case 02 ===> ${leetCode189.rotate(intArrayOf(-1,-100,3,99), 2)}")
+    println("LeetCode 189 Test case 03 ===> ${leetCode189.rotate(intArrayOf(1,2), 2)}")*/
+
     //Leetcode - 202
     //println("LeetCode 202 Testcase 1 --> ${isHappy(19)}") //output true
     //println("LeetCode 202 Testcase 2 --> ${isHappy(20)}") //output false
@@ -223,6 +237,28 @@ fun main(args: Array<String>) {
     trie.insert("app")
     println("LeetCode 208 Search app ${trie.search("app")}")*/
     //=============================Leetcode - 208====================================//
+
+    /*var leetCode217 = LeetCode217()
+    println("LeetCode 217 Test Case 01 ===> ${leetCode217.containsDuplicate(intArrayOf(1,2,3,1))}") //true
+    println("LeetCode 217 Test Case 02 ===> ${leetCode217.containsDuplicate(intArrayOf(1,2,3,4))}") //false
+    println("LeetCode 217 Test Case 03 ===> ${leetCode217.containsDuplicate(intArrayOf(1,1,1,3,3,4,3,2,4,2))}") //true
+    */
+
+    /*var leetCode219 = LeetCode219()
+    println("LeetCode 219 Test case 01 ====> ${leetCode219.containsNearbyDuplicate(intArrayOf(1,2,3,1), 3)}") //true
+    println("LeetCode 219 Test case 02 ====> ${leetCode219.containsNearbyDuplicate(intArrayOf(1,0,1,1), 1)}") //true
+    println("LeetCode 219 Test case 03 ====> ${leetCode219.containsNearbyDuplicate(intArrayOf(1,2,3,1,2,3), 2)}") //false
+    println("LeetCode 219 Test case 04 ====> ${leetCode219.containsNearbyDuplicate(intArrayOf(99,99), 2)}") //true*/
+
+   /* var leetCode220 =  LeetCode220()
+    println("LeetCode 220 Test Case 1 ==> ${leetCode220.containsNearbyAlmostDuplicate(intArrayOf(1,2,3,1), 3, 0)}") //true
+    println("LeetCode 220 Test Case 2 ==> ${leetCode220.containsNearbyAlmostDuplicate(intArrayOf(1,0,1,1), 1, 2)}") //true
+    println("LeetCode 220 Test Case 3 ==> ${leetCode220.containsNearbyAlmostDuplicate(intArrayOf(1,5,9,1,5,9), 2, 3)}") //false
+    println("LeetCode 220 Test Case 4 => ${leetCode220.containsNearbyAlmostDuplicate(intArrayOf(0), 0, 0)}") //false
+    println("LeetCode 220 Test Case 5 => ${leetCode220.containsNearbyAlmostDuplicate(intArrayOf(2,2), 3, 0)}") //true
+    println("LeetCode 220 Test Case 6 => ${leetCode220.containsNearbyAlmostDuplicate(intArrayOf(2,1), 1, 1)}") //true
+    println("LeetCode 220 Test case 7 => ${leetCode220.containsNearbyAlmostDuplicate(intArrayOf(-1,-1), 1, -1)}") //false
+    println("LeetCode 220 Test case 7 => ${leetCode220.containsNearbyAlmostDuplicate(intArrayOf(-3,3), 2, 4)}") //false*/
 
     //Leetcode - 236
     //println("Leetcode 236")
@@ -272,8 +308,13 @@ fun main(args: Array<String>) {
     //println("LeetCode 537 Test Case 3 ===> ${ComplexNumber.Companion.multiply(ComplexNumber.Companion.parseComplexNumberToObject("78+-76i"), ComplexNumber.Companion.parseComplexNumberToObject("-86+72i"))}")
 
     //LeetCode 553
-    println("LeetCode 553 Test Case 1 ==> ${optimalDivision(intArrayOf(1000,100,10,2))}")
-    println("LeetCode 553 Test Case 2 ==> ${optimalDivision(intArrayOf(2,3,4))}")
+    //println("LeetCode 553 Test Case 1 ==> ${optimalDivision(intArrayOf(1000,100,10,2))}")
+    //println("LeetCode 553 Test Case 2 ==> ${optimalDivision(intArrayOf(2,3,4))}")
+
+    //println("Leetcode 611 Test case 1 ==> ${triangleNumber(intArrayOf(2,2,3,4))}")
+    //println("Leetcode 611 Test case 2 ==> ${triangleNumber(intArrayOf(0,1,0))}")
+    //println("Leetcode 611 Test case 3 ==> ${triangleNumber(intArrayOf(48,66,61,46,94,75))}")
+
     //LeetCode 728
     //println("LeetCode 728")
     //println("LeetCode 728 Test 1 ---> ${selfDividingNumbers(1,22)}") //output [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22]
